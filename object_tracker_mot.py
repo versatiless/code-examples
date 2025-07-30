@@ -204,7 +204,6 @@ folder_to_rotate = {
 def main():
     home_path = osp.expanduser("~")
     project_path = osp.join(home_path, "StreetObjectDetection/StreetObjYOLO")
-    video_root_folder = "/mnt/d/202*Video/Tacoma/Right/*/"
     cdds = glob(osp.join(video_root_folder, "*.MP4"))
     print(f"[INFO] Total videos: {len(cdds)}")
 
