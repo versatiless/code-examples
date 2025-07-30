@@ -213,7 +213,6 @@ def main():
     type_to_model, type_to_imgsz, type_to_old_to_new_idx, names = load_models(type_to_model_path)
 
     for video_path in cdds:
-        # video_path = "/mnt/c/2024Video/Tacoma/Right/11242024/GX010113.MP4"
         video_basename = osp.basename(video_path).replace(".MP4", "")
         os.makedirs("mot_v2", exist_ok=True)
         save_file = f"mot_v2/{video_basename}_MOT.txt"
